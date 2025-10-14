@@ -3,7 +3,6 @@ project(ImGui LANGUAGES CXX)
 
 # Set output directories based on configuration
 set(OUTPUT_DIR ${CMAKE_BINARY_DIR}/bin)
-set(OUTPUT_DIR_INT ${CMAKE_BINARY_DIR}/bin-int)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/ImGui)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/ImGui)
