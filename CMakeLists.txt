@@ -20,6 +20,14 @@ add_library(ImGui STATIC
         imstb_rectpack.h
         imstb_textedit.h
         imstb_truetype.h
+        imgui_tables.cpp
+        backends/imgui_impl_glfw.cpp
+        backends/imgui_impl_opengl3.cpp
+)
+
+target_include_directories(ImGui PUBLIC
+        ../glfw/include
+        ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # Set C++ standard and other compile options
